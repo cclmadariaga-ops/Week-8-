@@ -1,0 +1,43 @@
+# Week 8 Progress Post
+
+## App name:
+
+Midnight Mixx
+
+## This week I added or studied JSON persistence. My app needs to remember:
+
+My app needs to remember the information about the music project the user creates. This includes the project name, music world, mood, playlist name, songs, genre, description, favorite status, and the date the project was created. I used JSON to save this information into a Project.json file so it can be stored and used later.
+
+## The three TODO items I worked on were:
+
+1. **Create A Project Class**
+
+   * I created a Project class to organize the information about each music project.
+
+2. **Serialize Project Class**
+
+   * I added JSON serialization so my app can save the Project information into a JSON file.
+
+3. **Refactor WriteFile Procedure To Take Data Input**
+
+   * I changed my WriteFile procedure so it can write different information to files instead of only using one set message.
+
+## One function or procedure I understand better now is:
+
+One procedure I understand better now is SaveProjectJSON. I learned how the app takes the information from my Project class and turns it into a JSON file that can be saved.
+
+## One issue I ran into was:
+
+One issue I ran into was getting my folders and JSON file to save in the correct location. At first, my program was giving errors because the folder path was not set correctly. I fixed it by creating the project folder on the Desktop before saving the JSON file.
+
+## For a future version 2.1 of my app, I would improve:
+
+For version 2.1, I would like to add a graphical user interface to make the app easier to use. I would also like to add features like editing saved projects, recommending songs based on mood, and connecting to music services.
+
+## My project link is:
+
+
+
+## Screenshot proof:
+
+I will include screenshots showing my app running, the project folder being created, the folder structure, the Project.json file, and my Discord post with future improvement ideas.
