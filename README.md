@@ -1,127 +1,35 @@
-# Week 8 Application Change Log
+Midnight Mixx Week 8 Project README
 
-## App Name
+Folder Purpose:
+This folder contains my Midnight Mixx music project application. The purpose of this project is to create and organize a music project workspace with folders for documentation, assets, audio files, and saved project information.
 
-Midnight Mixx
+Project Contents:
+- VB.NET source code:
+  Contains the code for creating folders, saving project information, and loading JSON data.
 
-## Previous Version
+- Data folder:
+  Stores project data, including the Project.json file created by JSON serialization.
 
-My previous Folder Maker App could:
+- Docs folder:
+  Stores documentation, research, and design information.
 
-* Create a music project folder structure for organizing files.
-* Create folders for playlists, songs, genres, covers, and project resources.
-* Save basic project information into text files.
+- Assets folder:
+  Stores images, artwork, album covers, and icons.
 
-## New Version
+- Audio folder:
+  Stores songs and sound effects.
 
-This version adds:
+- MusicWorlds folder:
+  Stores different music categories such as Dreamscape, Chill, Energy, and Relaxation.
 
-* **JSON saving:**
-  The application now saves project information into a `Project.json` file using JSON serialization. The Project class stores information such as project name, current music world, selected mood, playlist name, songs, genre, description, and creation date.
+- Code_Examples.txt:
+  Contains the starter tutorial code and TODO examples.
 
-* **NuGet/package use:**
-  The application uses the Newtonsoft.Json NuGet package to serialize and deserialize project information.
+- Change Log:
+  Explains the updates made during Week 8 and the TODO items completed.
 
-* **File save location:**
-  The application now creates the project folder on the user's Desktop using the project name entered in the console. The JSON file is saved inside the `Data\JSON` folder.
+- Screenshots:
+  Shows proof that the application runs and creates the required files.
 
-* **Three TODO items completed:**
-
-  * Created a Project class to store project information.
-  * Added JSON serialization and deserialization.
-  * Refactored the WriteFile procedure to accept data input.
-  * Created a separate procedure for generating project subfolders.
-  * Added comments to procedures and functions.
-
-## TODO Items I Chose
-
-### 1. TODO item: Create A Project Class
-
-* **What I changed:**
-  I created a Project class with properties for project name, music world, mood, playlist information, genre, description, creation date, and favorite status.
-
-* **Why it improves the app:**
-  The Project class organizes related information together and makes it easier to save and load project data.
-
----
-
-### 2. TODO item: Serialize Project Class
-
-* **What I changed:**
-  I added JSON serialization using `JsonConvert.SerializeObject()` to convert the Project object into a JSON file.
-
-* **Why it improves the app:**
-  The app can now save project information in a structured format that can be stored and used later.
-
----
-
-### 3. TODO item: Refactor WriteFile Procedure To Take Data Input
-
-* **What I changed:**
-  I updated the WriteFile procedure so it accepts the file name, location, and data that should be written.
-
-* **Why it improves the app:**
-  The procedure is more reusable because it can save different types of information instead of only writing one fixed message.
-
----
-
-## Functions And Procedures I Commented
-
-* **CreateSubFolders**
-
-  * Purpose: Creates the different project folders for documentation, assets, data, audio, music worlds, and screenshots.
-  * Inputs: None.
-  * Output or result: Creates the folder structure inside the user's project folder.
-
-* **CreateProjectFolder**
-
-  * Purpose: Creates individual folders inside the project directory.
-  * Inputs: Folder path and folder name.
-  * Output or result: Creates a new folder.
-
-* **WriteFile**
-
-  * Purpose: Writes text or JSON data into a file.
-  * Inputs: File name, file location, and data.
-  * Output or result: Creates and saves a file.
-
-* **SaveProjectJSON**
-
-  * Purpose: Saves project information as JSON.
-  * Inputs: None.
-  * Output or result: Creates a Project.json file containing saved project information.
-
-* **LoadProjectJSON**
-
-  * Purpose: Loads saved project information from a JSON file.
-  * Inputs: JSON file path.
-  * Output or result: Returns a Project object from the saved JSON data.
-
-## Testing Notes
-
-* **What worked:**
-
-  * The program successfully creates a project folder on the Desktop.
-  * The application creates the required subfolders.
-  * Project information is saved into a Project.json file.
-  * JSON serialization successfully converts the Project object into saved data.
-
-* **What failed:**
-
-  * The first version had errors because the project directory was not assigned before creating folders.
-  * There were issues caused by duplicate procedure names and incorrect variable usage.
-
-* **What I fixed:**
-
-  * Added a FullDirectory path that creates the project folder on the Desktop.
-  * Removed duplicate CreateProjectFolder procedures.
-  * Fixed the Input variable issue by using UserInput.
-  * Corrected JSON file saving.
-
-* **What I would improve in version 2.1:**
-
-  * Add a graphical user interface instead of only using the console.
-  * Allow users to edit existing projects.
-  * Add music recommendations based on mood and genre.
-  * Add connections to music services.
-  * Allow users to share created music worlds.
+How To Understand This Submission:
+Start by reviewing the VB.NET code to see how the application creates folders and saves project information. The SaveProjectJSON procedure shows how JSON serialization is used to create the Project.json file. The Project class contains the information saved by the application. The README and Change Log explain the changes made for the Week 8 update.
