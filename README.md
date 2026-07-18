@@ -7,24 +7,6 @@ Project Contents:
 - VB.NET source code:
   Contains the code for creating folders, saving project information, and loading JSON data.
 
-- Data folder:
-  Stores project data, including the Project.json file created by JSON serialization.
-
-- Docs folder:
-  Stores documentation, research, and design information.
-
-- Assets folder:
-  Stores images, artwork, album covers, and icons.
-
-- Audio folder:
-  Stores songs and sound effects.
-
-- MusicWorlds folder:
-  Stores different music categories such as Dreamscape, Chill, Energy, and Relaxation.
-
-- Code_Examples.txt:
-  Contains the starter tutorial code and TODO examples.
-
 - Change Log:
   Explains the updates made during Week 8 and the TODO items completed.
 
