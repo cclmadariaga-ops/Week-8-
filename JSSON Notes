@@ -1,0 +1,71 @@
+# Week 8 JSON Notes
+
+## What JSON Means
+
+JSON stands for JavaScript Object Notation. In this assignment, I am using JSON as a way to save my app information into a readable file. My app uses JSON to store project details so the information can be saved and loaded later.
+
+## What My App Needs To Remember
+
+* Project name:
+  The name the user enters when creating a new Midnight Mixx project.
+
+* Team member names:
+  The project creator information.
+
+* Folder names:
+  The different folders created for Docs, Assets, Data, Audio, MusicWorlds, and Screenshots.
+
+* File names:
+  The files created by the application, including Project.json.
+
+* Last saved location:
+  The Desktop folder location where the user's project is created.
+
+* Other information:
+  The current music world, selected mood, playlist name, songs, genre, project description, favorite status, and project creation date.
+
+## Variables Connected To JSON
+
+* Variable name: ProjectName
+
+  * Data type: String
+  * What it stores: The name of the user's music project.
+  * Why the app needs it: It is used to name the project folder and save the project information.
+
+* Variable name: CurrentWorld
+
+  * Data type: String
+  * What it stores: The selected music world, such as Dreamscape.
+  * Why the app needs it: It saves the type of music environment connected to the project.
+
+* Variable name: SelectedMood
+
+  * Data type: String
+  * What it stores: The mood of the playlist, such as Chill.
+  * Why the app needs it: It helps organize the project based on the user's music style.
+
+* Variable name: PlaylistSongs
+
+  * Data type: List(Of String)
+  * What it stores: Songs saved in the project playlist.
+  * Why the app needs it: It keeps track of songs connected to the music project.
+
+* Variable name: CreatedDate
+
+  * Data type: Date
+  * What it stores: The date the project was created.
+  * Why the app needs it: It records when the project information was saved.
+
+## Save Process
+
+1. The user enters a project name.
+2. The app stores the information in variables and the Project object.
+3. The app converts the Project object into JSON using JSON serialization.
+4. The app writes the JSON information into a Project.json file.
+5. The JSON file is saved inside the Data\JSON folder.
+
+## Questions I Still Have
+
+* How could I add more information to the JSON file without making the Project class too large?
+* How could I allow users to edit and update saved JSON projects?
+* How could I connect JSON saving with a graphical user interface in a future version?
