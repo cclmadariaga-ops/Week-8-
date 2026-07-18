@@ -1,0 +1,25 @@
+Public Class Class1
+
+
+    Public Property ProjectName As String
+
+    Public Property CurrentWorld As String
+
+    Public Property SelectedMood As String
+
+    Public Property PlaylistName As String
+
+    Public Property PlaylistSongs As List(Of String)
+
+    Public Property SongCount As Integer
+
+    Public Property IsFavorite As Boolean
+
+    Public Property CurrentGenre As String
+
+    Public Property Description As String
+
+    Public Property CreatedDate As Date
+
+
+End Class
