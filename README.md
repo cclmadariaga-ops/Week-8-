@@ -32,4 +32,4 @@ Project Contents:
   Shows proof that the application runs and creates the required files.
 
 How To Understand This Submission:
-Start by reviewing the VB.NET code to see how the application creates folders and saves project information. The SaveProjectJSON procedure shows how JSON serialization is used to create the Project.json file. The Project class contains the information saved by the application. The README and Change Log explain the changes made for the Week 8 update.
+Start by reviewing the VB.NET code named as Module1.vb to see how the application creates folders and saves project information. The SaveProjectJSON procedure shows how JSON serialization is used to create the Project.json file. The Project class contains the information saved by the application. The README and Change Log explain the changes made for the Week 8 update.
