@@ -86,9 +86,9 @@ Module Module1
 
     End Sub
 
-    ''' <summary>
-    ''' Creates project subfolders.
-    ''' </summary>
+    
+    'This is what creates project subfolders.
+  
     Private Sub CreateSubFolders()
 
 
@@ -294,11 +294,9 @@ What I would improve in version 2.1
     End Sub
 
 
-
-
-    ''' <summary>
-    ''' Writes data to a file.
-    ''' </summary>
+    
+    'This is what Writes data to a file.
+   
     Private Sub WriteFile(fileName As String, location As String, data As String)
 
 
@@ -317,9 +315,9 @@ What I would improve in version 2.1
 
     End Sub
 
-    ''' <summary>
-    ''' Saves project information as JSON.
-    ''' </summary>
+    
+    'Saves project information as JSON.
+    
     Private Sub SaveProjectJSON()
         Dim project As New Project With {
             .ProjectName = ProjectName,
@@ -362,9 +360,9 @@ What I would improve in version 2.1
 
 
 
-    ''' <summary>
-    ''' Loads project information from JSON.
-    ''' </summary>
+    
+    'Loads project information from JSON.
+    
     Private Function LoadProjectJSON(filePath As String) As Project
 
 
